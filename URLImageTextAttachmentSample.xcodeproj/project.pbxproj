@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B9668D4F30D8277CBB9F5774B6364CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286638F75999F363D74206C0B14C25B1 /* LaunchScreen.storyboard */; };
+		1C9375235E4E2E523B27CF2A8459C764 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756983D334DC2DE5FB7362E17C15CAF8 /* UIImageExtension.swift */; };
+		4A1A74A0370849A58B056A70E27109CE /* URLImageTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C42D87B89D44C8F5B822320BB2F53CE /* URLImageTextAttachment.swift */; };
 		C77A96D28F5614195EF76EE71130EF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463CDFC8D4C539B306D89D9B7F816D79 /* Assets.xcassets */; };
 		DC914DA3EBCCDE2A8EB4EFA3C5106398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DF95C0A3603A8CF01308BCD42A5D01 /* ViewController.swift */; };
 		F0589373C218FAD077FE79E1D551C0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2473C336813D94103F7CA159140BB1 /* AppDelegate.swift */; };
@@ -21,7 +23,9 @@
 		39C826C20F54A49A97E8903C6F20D60C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		463CDFC8D4C539B306D89D9B7F816D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2473C336813D94103F7CA159140BB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5C42D87B89D44C8F5B822320BB2F53CE /* URLImageTextAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImageTextAttachment.swift; sourceTree = "<group>"; };
 		63DF95C0A3603A8CF01308BCD42A5D01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		756983D334DC2DE5FB7362E17C15CAF8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		AE8C096AFEC6F8B867B60F132D76036D /* Pods_URLImageTextAttachmentSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLImageTextAttachmentSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E98BE6999F44BAD391B96F990C18AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F66E5832588ED7AA0F95999D39F622F0 /* REAME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = REAME.md; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				463CDFC8D4C539B306D89D9B7F816D79 /* Assets.xcassets */,
 				E2E98BE6999F44BAD391B96F990C18AB /* Info.plist */,
 				286638F75999F363D74206C0B14C25B1 /* LaunchScreen.storyboard */,
+				756983D334DC2DE5FB7362E17C15CAF8 /* UIImageExtension.swift */,
+				5C42D87B89D44C8F5B822320BB2F53CE /* URLImageTextAttachment.swift */,
 				63DF95C0A3603A8CF01308BCD42A5D01 /* ViewController.swift */,
 			);
 			path = URLImageTextAttachmentSample;
@@ -156,6 +162,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1F9D70519696ACBF95E4FF5C26F0FFFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-URLImageTextAttachmentSample/Pods-URLImageTextAttachmentSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-URLImageTextAttachmentSample/Pods-URLImageTextAttachmentSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7669E76DA44ADBEF06AF298281C145D6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -195,28 +225,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1F9D70519696ACBF95E4FF5C26F0FFFB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-URLImageTextAttachmentSample/Pods-URLImageTextAttachmentSample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-URLImageTextAttachmentSample/Pods-URLImageTextAttachmentSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0589373C218FAD077FE79E1D551C0DB /* AppDelegate.swift in Sources */,
+				1C9375235E4E2E523B27CF2A8459C764 /* UIImageExtension.swift in Sources */,
+				4A1A74A0370849A58B056A70E27109CE /* URLImageTextAttachment.swift in Sources */,
 				DC914DA3EBCCDE2A8EB4EFA3C5106398 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

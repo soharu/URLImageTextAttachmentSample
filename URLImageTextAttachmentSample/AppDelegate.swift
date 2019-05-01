@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         guard let window = window else { assertionFailure(); return false }
+
+        KingfisherManager.shared.cache.clearDiskCache() // clear cache for testing
+
         window.rootViewController = ViewController()
         window.makeKeyAndVisible()
         return true
