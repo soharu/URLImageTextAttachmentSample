@@ -6,6 +6,7 @@ target 'URLImageTextAttachmentSample' do
   use_frameworks!
 
   # Pods for URLImageTextAttachmentSample
+  pod 'SwiftLint'
 
 end
 
