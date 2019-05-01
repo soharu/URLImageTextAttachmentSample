@@ -28,7 +28,7 @@
 		756983D334DC2DE5FB7362E17C15CAF8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		AE8C096AFEC6F8B867B60F132D76036D /* Pods_URLImageTextAttachmentSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_URLImageTextAttachmentSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E98BE6999F44BAD391B96F990C18AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F66E5832588ED7AA0F95999D39F622F0 /* REAME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = REAME.md; sourceTree = "<group>"; };
+		F0C1516FDBB68C7DE402876A21FAFF8C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 				9993A5C9BFCB4EC20657756463DC1CF3 /* Pods */,
 				8B495907B5C5084D2FE9134A5229E70E /* Products */,
 				DDB9AF1E9CC31020D1BB675463559DAE /* URLImageTextAttachmentSample */,
-				F66E5832588ED7AA0F95999D39F622F0 /* REAME.md */,
+				F0C1516FDBB68C7DE402876A21FAFF8C /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
