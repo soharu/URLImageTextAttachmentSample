@@ -7,6 +7,6 @@ target 'URLImageTextAttachmentSample' do
 
   # Pods for URLImageTextAttachmentSample
   pod 'SwiftLint'
-
+  pod 'SnapKit', '~> 5.0.0'
 end
 
