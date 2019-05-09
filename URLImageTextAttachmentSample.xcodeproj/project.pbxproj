@@ -10,6 +10,7 @@
 		0B9668D4F30D8277CBB9F5774B6364CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286638F75999F363D74206C0B14C25B1 /* LaunchScreen.storyboard */; };
 		1C9375235E4E2E523B27CF2A8459C764 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756983D334DC2DE5FB7362E17C15CAF8 /* UIImageExtension.swift */; };
 		4A1A74A0370849A58B056A70E27109CE /* URLImageTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C42D87B89D44C8F5B822320BB2F53CE /* URLImageTextAttachment.swift */; };
+		AEE4C1BB2EC394EE7A30B78DAE5F1878 /* TextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAD6FAC5AB5E681D31548E134977CC7 /* TextViewCell.swift */; };
 		C77A96D28F5614195EF76EE71130EF4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 463CDFC8D4C539B306D89D9B7F816D79 /* Assets.xcassets */; };
 		DC914DA3EBCCDE2A8EB4EFA3C5106398 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DF95C0A3603A8CF01308BCD42A5D01 /* ViewController.swift */; };
 		F0589373C218FAD077FE79E1D551C0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2473C336813D94103F7CA159140BB1 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BAD6FAC5AB5E681D31548E134977CC7 /* TextViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewCell.swift; sourceTree = "<group>"; };
 		0CB186A06EE09EB439298013F9C4F460 /* Pods-URLImageTextAttachmentSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLImageTextAttachmentSample.release.xcconfig"; path = "Target Support Files/Pods-URLImageTextAttachmentSample/Pods-URLImageTextAttachmentSample.release.xcconfig"; sourceTree = "<group>"; };
 		0E8CE90486A9403FA564A43C868C776B /* URLImageTextAttachmentSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URLImageTextAttachmentSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C80DBFE51E588AE412F135FC6FE6B19 /* Pods-URLImageTextAttachmentSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-URLImageTextAttachmentSample.debug.xcconfig"; path = "Target Support Files/Pods-URLImageTextAttachmentSample/Pods-URLImageTextAttachmentSample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				463CDFC8D4C539B306D89D9B7F816D79 /* Assets.xcassets */,
 				E2E98BE6999F44BAD391B96F990C18AB /* Info.plist */,
 				286638F75999F363D74206C0B14C25B1 /* LaunchScreen.storyboard */,
+				0BAD6FAC5AB5E681D31548E134977CC7 /* TextViewCell.swift */,
 				756983D334DC2DE5FB7362E17C15CAF8 /* UIImageExtension.swift */,
 				5C42D87B89D44C8F5B822320BB2F53CE /* URLImageTextAttachment.swift */,
 				63DF95C0A3603A8CF01308BCD42A5D01 /* ViewController.swift */,
@@ -172,6 +175,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-URLImageTextAttachmentSample/Pods-URLImageTextAttachmentSample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -179,6 +185,9 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0589373C218FAD077FE79E1D551C0DB /* AppDelegate.swift in Sources */,
+				AEE4C1BB2EC394EE7A30B78DAE5F1878 /* TextViewCell.swift in Sources */,
 				1C9375235E4E2E523B27CF2A8459C764 /* UIImageExtension.swift in Sources */,
 				4A1A74A0370849A58B056A70E27109CE /* URLImageTextAttachment.swift in Sources */,
 				DC914DA3EBCCDE2A8EB4EFA3C5106398 /* ViewController.swift in Sources */,
