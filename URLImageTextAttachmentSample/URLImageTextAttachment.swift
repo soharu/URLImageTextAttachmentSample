@@ -26,6 +26,8 @@ class URLImageTextAttachment: NSTextAttachment {
         self.font = font
 
         super.init(data: nil, ofType: nil)
+
+        image = KingfisherManager.shared.cache.retrieveImageInMemoryCache(forKey: url.absoluteString)
     }
 
     override func image(forBounds imageBounds: CGRect, textContainer: NSTextContainer?, characterIndex charIndex: Int) -> UIImage? {
